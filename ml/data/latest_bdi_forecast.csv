@@ -1,0 +1,2 @@
+forecast_generated_from,current_bdi,forecast_horizon_observations,forecast_bdi,forecast_change,forecast_change_pct,direction,model,feature_count,training_observations,data_classification
+2025-03-07,1400.0,7,1542.559248541733,142.55924854173304,10.182803467266647,RISING,Linear Regression,45,2969,DEMO / HISTORICAL-DATA MODEL

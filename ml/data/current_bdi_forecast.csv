@@ -1,0 +1,2 @@
+forecast_date,current_bdi,forecast_horizon_observations,forecast_bdi,absolute_change,percentage_change,direction,model,feature_count,data_classification
+2026-09-11,3507.0,7,3400.2200807116424,-106.77991928835763,-3.044765306197822,FALLING,Linear Regression,33,DEMO / HISTORICAL-DATA MODEL

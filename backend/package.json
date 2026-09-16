@@ -1,0 +1,28 @@
+{
+  "name": "freight-ai-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/scripts/seedDemoData.js",
+    "seed:vessels": "node src/scripts/seedDemoVesselTypes.js",
+    "seed:ports": "node src/scripts/seedDemoPorts.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.18.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.2.2",
+    "vitest": "^5.0.0"
+  }
+}

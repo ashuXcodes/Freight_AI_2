@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Environment files (commit .env.example files instead)
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor and operating system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
