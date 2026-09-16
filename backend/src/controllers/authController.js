@@ -13,7 +13,7 @@ function safeUser(user) {
 function authCookieOptions() {
   return {
     httpOnly: true,
-    sameSite: 'lax',
+    sameSite: env.nodeEnv === 'production' ? 'none' : 'lax',
     secure: env.nodeEnv === 'production',
     maxAge: 1000 * 60 * 60 * 24
   };
@@ -72,7 +72,7 @@ export async function login(request, response, next) {
 }
 
 export function logout(_request, response) {
-  response.clearCookie('authToken', { httpOnly: true, sameSite: 'lax', secure: env.nodeEnv === 'production' });
+  response.clearCookie('authToken', authCookieOptions());
   return response.status(200).json({ message: 'Logged out successfully.' });
 }
 
